@@ -1,0 +1,18 @@
+<svg width="160" height="60" viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Red Umbrella Canopy -->
+  <path d="M 25,25 Q 20,15 30,12 Q 45,8 60,12 Q 70,8 80,12 Q 95,8 110,12 Q 120,15 115,25"
+        fill="#D32F2F" stroke="#B71C1C" stroke-width="1.5"/>
+
+  <!-- Umbrella Scalloped Edge -->
+  <path d="M 25,25 Q 32,22 40,25 Q 48,22 56,25 Q 64,22 72,25 Q 80,22 88,25 Q 96,22 104,25 Q 112,22 115,25"
+        fill="none" stroke="#B71C1C" stroke-width="1"/>
+
+  <!-- Umbrella Handle -->
+  <line x1="70" y1="25" x2="70" y2="42" stroke="#333" stroke-width="2.5"/>
+  <path d="M 70,42 Q 73,45 70,48 Q 67,45 70,42"
+        fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- PTT Text with white/light color -->
+  <text x="70" y="57" font-family="Arial, sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle" fill="#ffffff">ptt</text>
+</svg>
