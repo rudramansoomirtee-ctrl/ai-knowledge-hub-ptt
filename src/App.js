@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import './App.css';
 
-const API_BASE = "https://vnqwfdsw7mvklpwqkkhofuq7vm0wbica.lambda-url.us-east-1.on.aws";
+const API_BASE = "https://kkodqaoeawv7bjyqm6ycawwk2e0tumph.lambda-url.eu-west-2.on.aws";
 
 // Email Templates
 const EMAIL_TEMPLATES = [
