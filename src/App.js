@@ -130,7 +130,8 @@ function App() {
     streamingEnabled: false,
     streamRetries: 3,
     autoBookmark: false,
-    theme: 'dark'
+    theme: 'dark',
+    sourceCount: 5
   });
 
   // Generator State
@@ -317,7 +318,7 @@ function App() {
         const response = await fetch(`${API_BASE}/search`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query: currentQuery, top_k: 5 })
+          body: JSON.stringify({ query: currentQuery, top_k: settings.sourceCount })
         });
 
         if (!response.ok) {
@@ -367,7 +368,7 @@ function App() {
     const response = await fetch(`${API_BASE}/rag`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query: currentQuery, top_k: 5 })
+      body: JSON.stringify({ query: currentQuery, top_k: settings.sourceCount })
     });
 
     if (!response.ok) {
@@ -402,7 +403,7 @@ function App() {
     const response = await fetch(`${API_BASE}/rag/stream`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query: currentQuery, top_k: 5 })
+      body: JSON.stringify({ query: currentQuery, top_k: settings.sourceCount })
     });
 
     if (!response.ok) {
@@ -535,7 +536,7 @@ function App() {
       const response = await fetch(`${API_BASE}/rag`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: fullQuery, top_k: 5 })
+        body: JSON.stringify({ query: fullQuery, top_k: settings.sourceCount })
       });
 
       if (!response.ok) {
@@ -1885,6 +1886,31 @@ function App() {
                       </select>
                     </div>
                   )}
+
+                  <div className="setting-item">
+                    <div className="setting-info">
+                      <label>Number of Sources</label>
+                      <span className="setting-description">
+                        Maximum number of sources to retrieve for each query
+                      </span>
+                    </div>
+                    <select
+                      value={settings.sourceCount}
+                      onChange={(e) => {
+                        const updated = { ...settings, sourceCount: parseInt(e.target.value) };
+                        setSettings(updated);
+                        saveToLocalStorage('settings', updated);
+                        showNotification(`Source count set to ${e.target.value}`, 'info');
+                      }}
+                      className="setting-select"
+                    >
+                      <option value="3">3 sources</option>
+                      <option value="5">5 sources</option>
+                      <option value="7">7 sources</option>
+                      <option value="10">10 sources</option>
+                      <option value="15">15 sources</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div className="settings-group">
