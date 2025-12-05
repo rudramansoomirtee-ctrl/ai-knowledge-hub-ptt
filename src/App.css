@@ -108,8 +108,8 @@ body {
 }
 
 .logo-circle {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background: white;
   display: flex;
@@ -139,7 +139,7 @@ body {
 }
 
 .logo h1 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
@@ -874,12 +874,12 @@ body {
   }
 
   .logo h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .logo-circle {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border: 2px solid var(--neon-blue);
   }
 
@@ -927,12 +927,12 @@ body {
   }
 
   .logo h1 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .logo-circle {
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
   }
 
   .logo {

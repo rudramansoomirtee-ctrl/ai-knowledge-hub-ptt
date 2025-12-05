@@ -1190,7 +1190,7 @@ function App() {
             <div className="logo-circle">
               <img src="/logo.png" alt="PTT Logo" className="logo-image" />
             </div>
-            <h1>Knowledge<span className="gradient-text">Hub Pro</span></h1>
+            <h1>Imperium(L) <span className="gradient-text">AI Knowledge Hub</span></h1>
           </div>
           <div className="header-status">
             <div className="status-indicator"></div>
@@ -1203,18 +1203,18 @@ function App() {
         <aside className="sidebar">
           <nav className="nav">
             <button
-              className={`nav-button ${activeTab === 'upload' ? 'active' : ''}`}
-              onClick={() => setActiveTab('upload')}
-            >
-              <Upload size={20} />
-              <span>Upload</span>
-            </button>
-            <button
               className={`nav-button ${activeTab === 'chat' ? 'active' : ''}`}
               onClick={() => setActiveTab('chat')}
             >
               <Brain size={20} />
               <span>AI Chat</span>
+            </button>
+            <button
+              className={`nav-button ${activeTab === 'upload' ? 'active' : ''}`}
+              onClick={() => setActiveTab('upload')}
+            >
+              <Upload size={20} />
+              <span>Upload</span>
             </button>
             <button
               className={`nav-button ${activeTab === 'search' ? 'active' : ''}`}
@@ -1707,7 +1707,7 @@ function App() {
             <div className="learn-section">
               <div className="learn-header">
                 <h2>Interactive Learning</h2>
-                <p>Master KnowledgeHub Pro with guided tutorials</p>
+                <p>Master Imperium(L) AI Knowledge Hub with guided tutorials</p>
               </div>
 
               <div className="modules-grid">
@@ -1839,7 +1839,7 @@ function App() {
             <div className="settings-section">
               <div className="settings-header">
                 <h2>Settings</h2>
-                <p>Customize your KnowledgeHub Pro experience</p>
+                <p>Customize your Imperium(L) AI Knowledge Hub experience</p>
               </div>
 
               <div className="settings-groups">
@@ -1967,7 +1967,7 @@ function App() {
                 <div className="settings-info-box">
                   <Sparkles size={20} />
                   <div>
-                    <h4>About KnowledgeHub Pro</h4>
+                    <h4>About Imperium(L) AI Knowledge Hub</h4>
                     <p>Enterprise Knowledge Platform v1.0</p>
                     <p className="settings-stats">
                       {conversationHistory.length} conversations • {customPrompts.length} custom prompts
