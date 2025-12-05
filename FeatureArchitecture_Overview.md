@@ -1,4 +1,4 @@
-# KnowledgeHub Pro — Architecture, Functionality, & User Interactions
+# Imperium(L) AI Knowledge Hub — Architecture, Functionality, & User Interactions
 
 ## Table of Contents
 
@@ -36,7 +36,7 @@
 
 ## Overview
 
-KnowledgeHub Pro is an AI-powered knowledge management web app designed for:
+Imperium(L) AI Knowledge Hub is an AI-powered knowledge management web app designed for:
 
 - **Uploading and processing documents (PDF)**
 - **Performing advanced semantic searches** across documents (vector search)
